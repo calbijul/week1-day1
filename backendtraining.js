@@ -19,6 +19,10 @@ const greet = function(name) {
   };
   console.log(greet("Kaizeel"));
 
+  const hghOrder = [1, 2, 3, 4, 5];
+  const maps = hghOrder.map(item => item + 2);
+console.log(maps); 
+
   
 
 
@@ -34,6 +38,15 @@ console.log(c); // see ya!
 }
 };
 someFunction(true);
+
+console.log('\nProblem #5: for loops')
+
+const someArrays = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for (let i = 0; i < someArrays.length; i++) {
+  console.log(someArrays[i]);
+}
+
+
 
 console.log('\nProblem #6: Array Methods')
 
