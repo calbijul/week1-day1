@@ -11,7 +11,9 @@ console.log(
 );
 
 console.log('\nProblem #2: Variable Declarations')
-
+console.log(`Var: Old way of declaring variables. It can be re-declared and updated, but it has a function-scoped or globally-scoped behavior
+  let: Newer way to declare variables. It can be updated but not re-declared in the same scope. Its block-scoped, meaning its limited to the block (like inside loops or conditionals) where it’s defined.
+  const: Used to declare constants. The value cant be re-assigned after declaration. Its also block-scoped.`)
 
 console.log('\nProblem #3: Function Types')
 const greet = function(name) {
@@ -187,6 +189,34 @@ console.log(hasJohnDoe);
 
 mapObj.delete('name');
 console.log(mapObj); 
+
+console.log('Problem #11: Asynchronous Programming')
+console.log(`Asynchronous programming allows certain tasks to run independently without blocking the main program, 
+  letting it continue executing other tasks. It’s useful for operations like loading data from a server or waiting for user input, 
+  where you don't want to stop everything else while waiting. In JavaScript, this is typically handled with callbacks, promises, 
+  or async/await to manage these tasks efficiently.`);
+
+console.log('Problem #12: Callback Hell')
+console.log(`Callback hell happens when you have many nested callbacks in your code, 
+  making it messy and hard to understand or fix.`)
+
+console.log('Problem #13: Promises')
+console.log(`1. A **promise** is an object in JavaScript that represents a value that may not be available yet but will be at some point in the future, 
+  such as the result of an asynchronous task like loading data from a server.
+
+2. A promise can be in one of three states:
+   - **Pending**: The promise is still waiting for the task to complete (like waiting for data to load).
+   - **Fulfilled**: The task is complete, and the promise has successfully returned a result.
+   - **Rejected**: Something went wrong during the task, and the promise has an error or failure.
+
+In simple terms, a promise is like a "promise" to give you an answer later, and it can either succeed, fail, or still be waiting for the answer.`)
+
+console.log('Problem #14: Async/Await')
+console.log(`Async/await makes working with asynchronous code easier and more like regular, straight-forward code.
+  * async makes a function return a promise.
+  * await pauses the function until the promise finishes, so you can work with the result directly.`)
+
+
 
 
 
